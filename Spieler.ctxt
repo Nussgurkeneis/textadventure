@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Spieler
+comment0.text=\r\n\ \r\n
+comment1.params=
+comment1.target=Spieler()
+comment2.params=itm
+comment2.target=void\ insInventar(Item)
+comment3.params=
+comment3.target=void\ liesInventar()
+numComments=4
