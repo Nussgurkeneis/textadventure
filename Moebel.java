@@ -1,7 +1,3 @@
-
-/**
- * 
- */
 public class Moebel
 {
     private String Name;

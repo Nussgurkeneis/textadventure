@@ -16,4 +16,8 @@ public class Raum
      this.Beschreibung = raum_beschreibung;
      this.Einrichtung = raum_einrichtung;
     }
+    
+    public void anschauen(){
+        System.out.println(this.Beschreibung);
+    }
 }

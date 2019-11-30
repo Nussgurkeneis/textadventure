@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Raum
+comment0.text=\r\n\r\n
+comment1.params=raum_id\ raum_nachbarn\ raum_beschreibung\ raum_einrichtung
+comment1.target=Raum(int,\ int[],\ java.lang.String,\ Moebel[])
+comment2.params=
+comment2.target=void\ anschauen()
+numComments=3
