@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Spieler
 {
     private ArrayList<Item> Inventar = new ArrayList<Item>();
-    private int Ort;
+    public int Ort;
 
     public Spieler()
     {
