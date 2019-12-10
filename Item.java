@@ -2,7 +2,7 @@
 /**
  *
  */
-public class Item
+public class Item extends Printer
 {
     public String Name;
     public String Beschreibung;
@@ -16,6 +16,6 @@ public class Item
     }
     
     public void anschauen() {
-        System.out.println(this.Name + ": " + this.Beschreibung);
+        this.println(this.Name + ": " + this.Beschreibung);
     }
 }

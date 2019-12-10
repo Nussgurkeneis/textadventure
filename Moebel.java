@@ -1,4 +1,4 @@
-public class Moebel
+public class Moebel extends Printer
 {
     public String Name;
     private String Beschreibung;
@@ -10,6 +10,7 @@ public class Moebel
     }
     
     public void anschauen() {
-     System.out.println(this.Name + ": " + this.Beschreibung);
+     //System.out.println(this.Name + ": " + this.Beschreibung);
+     this.println(this.Name + ": " + this.Beschreibung);
     }
 }

@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Raum
+public class Raum extends Printer
 {
     private int RaumID;
     public ArrayList<Integer> Nachbarraeume = new ArrayList<Integer>();
@@ -15,6 +15,6 @@ public class Raum
     }
     
     public void anschauen(){
-        System.out.println(this.Beschreibung);
+        this.println(this.Beschreibung);
     }
 }

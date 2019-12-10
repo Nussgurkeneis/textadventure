@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  *
  */
-public class Parser
+public class Parser extends Printer
 {
     private Scanner scan = new Scanner(System.in);
     public String input;
@@ -37,21 +37,21 @@ public class Parser
     public boolean parse(Raum aktuellerRaum) {
         this.input = scan.nextLine(); 
         
-        if (this.input.contains("beenden")) {
+        if (this.input.contains("beenden") || this.input.equals("q")) {
             return false;
         }
         
         for (int i = 0; i < this.gehen.size(); i++) {
             //System.out.print(this.input + " " + this.gehen.get(i) + " -");        //nur für Debugging
             if (this.input.contains(this.gehen.get(i))) {
-                System.out.println("du gehst.");                                    //platzhalter. ok, tbh das ist alles irgendwie platzhalter.
+                this.println("du gehst.");                                    //platzhalter. ok, tbh das ist alles irgendwie platzhalter.
                 return true;                                                             //beendet parse() wenn ein Wort gefunden wurde.
             }
         }
         
         for (int i = 0; i < this.benutzen.size(); i++) {
             if (this.input.contains(this.benutzen.get(i))) {
-                System.out.println("du benutzt etwas.");
+                this.println("du benutzt etwas.");
                 return true;                                                             //beendet parse() wenn ein Wort gefunden wurde.
             }
         }

@@ -11,7 +11,7 @@ public class Adventure
         Moebel Schrank_B = new Moebel("Schrank","Ein Kallax Regal");
         Moebel Schreibtisch_B = new Moebel("Schreibtisch","Ein normaler Schreibtisch ohne stuhl?");
         
-        Moebel TuerBuero_G = new Moebel("Bürotuer", "Eine schoene Holztuer. Auf dem Messingschild daneben steht 'Dr.Merkel'.");
+        Moebel TuerBuero_G = new Moebel("Buerotuer", "Eine schoene Holztuer. Auf dem Messingschild daneben steht 'Dr.Merkel'.");
         
         
         //Raeume erstellen
