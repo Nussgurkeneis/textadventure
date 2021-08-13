@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class Spieler
+public class Spieler extends Printer
 {
     private ArrayList<Item> Inventar = new ArrayList<Item>();
-    private int Ort;
+    public int Ort;
 
     public Spieler()
     {
@@ -14,14 +14,14 @@ public class Spieler
         this.Inventar.add(itm);
     }
     public void liesInventar() {                            //schreibt den Inhalt des Inventars in die Konsole
-        System.out.println("[Inventar]------------------"); //Deko
-        System.out.println("");
+        this.println("[Inventar]------------------"); //Deko
+        this.println("");
         
         for (int i = 0; i < this.Inventar.size(); i++) {            //für jedes Item im Inventar
-            System.out.println(this.Inventar.get(i).Name/* + ": " + this.Inventar.get(i).Beschreibung*/);      //gib das Item in einer Zeile aus
+            this.println(this.Inventar.get(i).Name/* + ": " + this.Inventar.get(i).Beschreibung*/);      //gib das Item in einer Zeile aus
         }
         
-        System.out.println("");                             //Deko
-        System.out.println("----------------------------");
+        this.println("");                             //Deko
+        this.println("----------------------------");
     }
 }
